@@ -15,7 +15,7 @@ maintainers = ["eric_G"]
 license = "GPL-3.0"
 website = "https://www.dumbware.io/"
 demo = "https://dumbterm.dumbware.io/"
-code = "https://github.com/DumbWareio/DumbDrop"
+code = "https://github.com/DumbWareio/DumbTerm"
 fund = "https://buymeacoffee.com/dumbware"
 
 [integration]
@@ -35,9 +35,9 @@ ram.runtime = "70M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/dumbdrop"
+    #[install.path]
+    #type = "path"
+    #default = "/dumbterm"
 
     [install.init_main_permission]
     type = "group"
@@ -50,14 +50,11 @@ ram.runtime = "70M"
     [resources.sources.main]
     url = "https://github.com/DumbWareio/DumbTerm/archive/refs/tags/v1.0.0.tar.gz"
     sha256 = "1d918038ed7ec82aec851d64b5c0ac0de954dd65dd1087b50f2240821f6ddbe5"
-    autoupdate.upstream = "https://github.com/DumbWareio/DumbDrop"
-    autoupdate.strategy = "latest_github_commit"
+    autoupdate.strategy = "latest_github_tags"
 
     [resources.system_user]
 
     [resources.install_dir]
-
-    [resources.data_dir]
 
     [resources.permissions]
     main.url = "/"
