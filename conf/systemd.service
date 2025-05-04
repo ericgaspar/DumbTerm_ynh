@@ -1,5 +1,5 @@
 [Unit]
-Description=DumbDrop: file dropper
+Description=DumbTerm: terminal emulator
 After=network.target
 
 [Service]
